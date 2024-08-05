@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap');
+
+body {
+  background: #284b63;
+  color: white;
+  font-family: 'Hind Siliguri', sans-serif;
+  text-align: center;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  transition: .5s;
+}
+
+a:hover {
+  color: #dddddd;
+}
+
+.navbar {
+  display: flex;
+  padding: 10px 20px;
+}
+
+.navbar .opciones {
+  display: flex;
+  align-items: center;
+}
+
+.navbar .opciones span{
+  cursor: pointer;
+}
+
+.navbar .register-btn {
+  background: #3c6e71;
+  color: white;
+}
+
+.navbar .login-btn {background: #d9d9d9;}
+
+.notfound img{ width: 25%;}
+
+.activo {
+  color: white;
+  text-decoration: none;
+  padding-left: 15px;
+  font-weight: bold;
+}
+
+.noActivo {
+  color: white;
+  text-decoration: none;
+  padding-left: 15px;
+}
+
+body {  margin: 0;}
+
+.App {
+  font-family: "Maitree", serif;
+  text-align: center;
+}
+
+h1 {  margin-bottom: 0;}
+
+/* Navbar */
+
+.navbar {
+  background: #34586b;
+  padding: 5px;
+  color: white;
+  display: flex;
+  justify-content:space-between;
+}
+
+/* gallery */
+.gallery {
+  display: grid;
+  gap: 10px;
+  row-gap: 40px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.grid-columns-5 {
+    grid-template-columns: repeat(5, 1fr);
+  }
+  .grid-columns-4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+ 
+.gallery .photo {
+  cursor: pointer;
+  padding: 10px 10px 0px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: 160px;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: left;
+  text-shadow: 0px 0px 15px black;
+}
+
+.gallery .photo:hover {
+  box-shadow: 0px 0px 2px 1px black;
+}
+
+.gallery .photo svg {
+  align-self: flex-end;
+}
+
+.p-3 { padding: 30px;}
+
+/* duración de la transición*/
+.card {
+  transition: all 0.3s;
+  border: 1px solid #ddd;
+  border-radius: 3%;
+  background-color: #34586b;
+  opacity: 0.8; /* Ajusta la transparencia, 1 es opaco y 0 es completamente transparente */
+}
+
+
+/* aumenta de tamaño la imagen
+.card:hover {
+  transform: scale(1.08);
+}*/
+.App {
+  position: relative;
+  height: 100vh;
+  color : white;
+  /*color:black; color de letras*/
+  overflow: hidden;
+}
+
+.App::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('https://img.freepik.com/foto-gratis/disposicion-rectangular-suculentas-cactus-suculentas-plantador_1127-3108.jpg');
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  opacity: 0.6; /* Ajusta la opacidad de la imagen de fondo */
+  z-index: -1; /* Asegura que la superposición esté detrás del contenido */
+}
+
+.App > * {
+  position: relative; /* Asegura que el contenido se coloque encima de la superposición */
+}
+/* 
+.card-img-top photo {
+  text-align: center;
+} */
